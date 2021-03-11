@@ -104,7 +104,7 @@ This is a richer alternative to the built-in `dialog` widget.
 
 This shows memory usage in an application's Java Virtual Machine.
 
-![Heap Manager](https://wiki.eclipse.org/Nebula_HeapManager)
+![Heap Manager](https://www.eclipse.org/nebula/images/opal/heapmanager.png)
 
 ### Login Dialog
 
