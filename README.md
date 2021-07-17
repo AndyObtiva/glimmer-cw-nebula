@@ -2,7 +2,7 @@
 ## [<img src="https://raw.githubusercontent.com/AndyObtiva/glimmer-dsl-swt/master/images/glimmer-logo-hi-res.png" height=40 /> Glimmer Custom Widget](https://github.com/AndyObtiva/glimmer-dsl-swt#custom-widget-gem)
 [![Gem Version](https://badge.fury.io/rb/glimmer-cw-nebula.svg)](http://badge.fury.io/rb/glimmer-cw-nebula)
 
-The [Nebula Project](https://www.eclipse.org/nebula/) is a collection of enterprise-grade high-quality [SWT](https://www.eclipse.org/swt/) (Standard Widget Toolkit) custom widgets, which are made available for use with [Glimmer DSL for SWT](https://github.com/AndyObtiva/glimmer-dsl-swt) in this Ruby gem.
+The [Nebula Project](https://www.eclipse.org/nebula/) is a collection of enterprise-grade high-quality [SWT](https://www.eclipse.org/swt/) (Standard Widget Toolkit) custom widgets, made available for use with [Glimmer DSL for SWT](https://github.com/AndyObtiva/glimmer-dsl-swt).
 
 Project version numbers are in sync with the [Nebula Project version](https://www.eclipse.org/nebula/downloads.php) (currently 2.5.0). The first 3 numbers represent the [Nebula Project version](https://www.eclipse.org/nebula/downloads.php). The last 2 numbers represent the minor and patch numbers of this Ruby gem.
 

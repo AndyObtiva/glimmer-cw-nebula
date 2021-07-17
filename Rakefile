@@ -18,7 +18,7 @@ Juwelier::Tasks.new do |gem|
   gem.homepage = "http://github.com/AndyObtiva/glimmer-cw-nebula"
   gem.license = "MIT"
   gem.summary = %Q{Nebula - Glimmer Custom Widget}
-  gem.description = %Q{The [Nebula Project](https://www.eclipse.org/nebula/) is a collection of enterprise-grade high-quality SWT (Standard Widget Toolkit) custom widgets, which are made available for use with [Glimmer DSL for SWT](https://github.com/AndyObtiva/glimmer-dsl-swt) in this Ruby gem.}
+  gem.description = %Q{The Nebula Project is a collection of enterprise-grade high-quality SWT (Standard Widget Toolkit) custom widgets, made available for use with Glimmer DSL for SWT (glimmer-dsl-swt gem).}
   gem.email = "andy.am@gmail.com"
   gem.authors = ["Andy Maleh"]
 

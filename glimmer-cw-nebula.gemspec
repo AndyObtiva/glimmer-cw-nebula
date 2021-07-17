@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib".freeze]
   s.authors = ["Andy Maleh".freeze]
   s.date = "2021-07-17"
-  s.description = "The [Nebula Project](https://www.eclipse.org/nebula/) is a collection of enterprise-grade high-quality SWT (Standard Widget Toolkit) custom widgets, which are made available for use with [Glimmer DSL for SWT](https://github.com/AndyObtiva/glimmer-dsl-swt) in this Ruby gem.".freeze
+  s.description = "The Nebula Project is a collection of enterprise-grade high-quality SWT (Standard Widget Toolkit) custom widgets, made available for use with Glimmer DSL for SWT (glimmer-dsl-swt gem).".freeze
   s.email = "andy.am@gmail.com".freeze
   s.extra_rdoc_files = [
     "LICENSE.txt",
