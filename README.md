@@ -1,10 +1,10 @@
-# Nebula 2.4.3.0.0
+# Nebula 2.5.0.0.0
 ## [<img src="https://raw.githubusercontent.com/AndyObtiva/glimmer-dsl-swt/master/images/glimmer-logo-hi-res.png" height=40 /> Glimmer Custom Widget](https://github.com/AndyObtiva/glimmer-dsl-swt#custom-widget-gem)
 [![Gem Version](https://badge.fury.io/rb/glimmer-cw-nebula.svg)](http://badge.fury.io/rb/glimmer-cw-nebula)
 
 The [Nebula Project](https://www.eclipse.org/nebula/) is a collection of enterprise-grade high-quality [SWT](https://www.eclipse.org/swt/) (Standard Widget Toolkit) custom widgets, which are made available for use with [Glimmer DSL for SWT](https://github.com/AndyObtiva/glimmer-dsl-swt) in this Ruby gem.
 
-Project version numbers are in sync with the [Nebula Project version](https://www.eclipse.org/nebula/downloads.php) (currently 2.4.3). The first 3 numbers represent the [Nebula Project version](https://www.eclipse.org/nebula/downloads.php). The last 2 numbers represent the minor and patch numbers of this Ruby gem.
+Project version numbers are in sync with the [Nebula Project version](https://www.eclipse.org/nebula/downloads.php) (currently 2.5.0). The first 3 numbers represent the [Nebula Project version](https://www.eclipse.org/nebula/downloads.php). The last 2 numbers represent the minor and patch numbers of this Ruby gem.
 
 This gem imports all of the [Nebula Project](https://www.eclipse.org/nebula/) custom widgets by default. If you prefer to bring in a single custom widget or just a few piecemeal, you can change the [configuration](#configuration) or alternatively use one of the standalone [Nebula](https://www.eclipse.org/nebula/) custom widget gems like [glimmer-cw-cdatetime-nebula](https://github.com/AndyObtiva/glimmer-cw-cdatetime-nebula) by running the `glimmer list:gems:customwidget` command.
 
@@ -247,7 +247,7 @@ This gem includes the [Nebula Project](https://www.eclipse.org/nebula/) JAR file
 ### Bundler
 
 ```ruby
-gem 'glimmer-cw-nebula', '~> 2.4.3.0.0'
+gem 'glimmer-cw-nebula', '~> 2.5.0.0.0'
 ```
 
 ### Direct
@@ -277,11 +277,13 @@ For more details on what custom widgets are included in the Nebula Project, chec
 
 [Nebula Project Official Website](https://www.eclipse.org/nebula/)
 
-[Nebula Project Official Javadoc](https://www.eclipse.org/nebula/releases/2.4.3/javadoc/index.html)
+[Nebula Project Official Javadoc](https://www.eclipse.org/nebula/releases/2.5.0/javadoc/index.html)
 
 ## Configuration
 
 By default, this gem brings in all of the [Nebula](https://www.eclipse.org/nebula/) custom widgets. They are basically all the libraries that live under the gem's [vendor/nebula](/vendor/nebula) directory minus the version number / file extension:
+
+Packages:
 
 ```
 org.eclipse.nebula.widgets.opal.heapmanager
@@ -349,7 +351,16 @@ To limit imported custom widgets, set one of the following variables before the 
 
 ## Example
 
+Run:
+
+```
+girb
+```
+
+Enter this code (assuming you have gem installed):
+
 ```ruby
+# require './lib/glimmer-cw-nebula' # if run locally from cloned project
 require 'glimmer-cw-nebula'
 
 include Glimmer
@@ -365,6 +376,14 @@ shell {
 ```
 
 ![Nebula Example](/images/glimmer-cw-nebula-example.png)
+
+## TODO
+
+[TODO.md](TODO.md)
+
+## Change Log
+
+[CHANGELOG.md](CHANGELOG.md)
 
 ## Contributing to glimmer-cw-nebula
 
