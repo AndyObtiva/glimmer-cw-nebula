@@ -377,6 +377,41 @@ shell {
 
 ![Nebula Example](/images/glimmer-cw-nebula-example.png)
 
+**Note about widgets without a standard SWT `(parent, style)` constructor:**
+
+Some Nebula widgets do not follow the SWT convention of always having a constructor that receives only the `(parent, style)` arguments, like `text_assist` as documented in the [TextAssist Nebula widget page](https://wiki.eclipse.org/Nebula_TextAssist):
+
+> There is a big difference with other SWT widget : there is no constructor TextAssist(Composite parent, int style).
+> 
+> The only constructor available is public TextAssist(final Composite parent, final int style, final TextAssistContentProvider contentProvider)
+
+In that case, you would have to pass all widget arguments manually in the Glimmer GUI DSL, so instead of simply adding a call to `text_assist`, you would have to pass all its arguments, including its parent as in `text_assist(parent, style, content_provider)`. Learn more in the example below.
+
+Example:
+
+```ruby
+require 'glimmer-dsl-swt'
+require 'glimmer-cw-nebula'
+
+class EuropeanCountryContentProvider < org.eclipse.nebula.widgets.opal.textassist.TextAssistContentProvider
+    EUROZONE = ["Austria", "Belgium", "Cyprus",
+         "Estonia", "Finland", "France", "Germany", "Greece", "Ireland", "Italy",
+         "Luxembourg", "Malta", "Netherlands", "Portugal", "Slovakia", "Slovenia", "Spain"]
+
+    def getContent(entry)
+      EUROZONE.select { |country| country.downcase.start_with?(entry.to_s.downcase) }
+    end
+end
+
+include Glimmer
+
+shell { |shell_proxy|
+  text 'Text Assist Demo'
+  
+  text_assist(shell_proxy.swt_widget, :none, EuropeanCountryContentProvider.new)
+}.open
+```
+
 ## TODO
 
 [TODO.md](TODO.md)
