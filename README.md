@@ -412,6 +412,8 @@ shell { |shell_proxy|
 }.open
 ```
 
+![Nebula Text Assist Example](/images/glimmer-nebula-text-assist-demo.gif)
+
 ## TODO
 
 [TODO.md](TODO.md)
