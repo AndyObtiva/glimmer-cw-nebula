@@ -140,7 +140,7 @@ This shows memory usage in an application's Java Virtual Machine.
 
 ### Text Assist
 
-![Text Assist](https://www.eclipse.org/nebula/images/opal/textassist.png)
+[![Text Assist](https://www.eclipse.org/nebula/images/opal/textassist.png)](https://wiki.eclipse.org/Nebula_TextAssist)
 
 ### Tip of The Day
 
